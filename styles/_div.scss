@@ -1,0 +1,62 @@
+@import './variables';
+@import './button';
+
+
+@mixin flexCenter($text){
+    text-align: $text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex($extraDirection){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $extraDirection;
+}
+@mixin flexDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    &.rules{
+        color: $rulesColor;
+        padding-right: 500px;
+        padding-left: 550px;
+        font-size: $ruleFontSize;
+        @include flexCenter(justify);
+    }
+    &#playerText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $FontFamily;
+        color: $playerColor;
+        text-transform: uppercase;
+    }
+    &.container{
+       @include flex(column);
+        
+        padding: 25px;
+        height: 75vh;
+        cursor: pointer;
+    }
+    &#board-boxes{
+        display: flex;
+        width: 450px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    &.box{
+        font-family: $FontFamily;
+        font-size: larger;
+        height: 150px;
+        width: 150px;
+      @include flexDisplay();
+       
+        background-color: $boxBackgroundColor;
+        border: 1px solid $boxBorderColor;
+    }
+}

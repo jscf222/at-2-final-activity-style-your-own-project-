@@ -1,0 +1,17 @@
+@import './variables';
+button{
+    display: $btnDisplay;
+    flex-direction: column;
+    transition: 200ms;
+    padding: $btnPadding;
+    border-radius: $btnBorderRadius;
+    background-color: $btnBackgroundColor;
+    font-family: $btnFont;
+    font-size: $btnFontSize;
+    border-color: $btnBorderColor;
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-7px);
+    }
+    
+    }

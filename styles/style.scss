@@ -1,0 +1,35 @@
+
+
+
+@import './div';
+@import './variables';
+@import './button';
+
+*{
+    background-color: #222c3c;
+    box-sizing: border-box;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $headerFont;
+    color: $headerColor;
+    text-transform: uppercase;
+
+}
+
+   
+:root{
+    --font-family:'Stylish', sans-serif; 
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    color: $bodyColor;
+    font-family: $FontFamily;
+}

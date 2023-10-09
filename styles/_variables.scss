@@ -1,0 +1,25 @@
+$btnBackgroundColor : #d8b26e;
+$btnFont :'stylish', 'sans-serif';
+$btnFontSize: 18px;
+$btnBorderColor: #222c3c;
+$btnDisplay: flex;
+$btnPadding: 10px 20px;
+$btnBorderRadius: 10px;
+$headerColor: #e2e0d5;
+$headerFont: 'stylish', sans-serif;
+$rulesColor: #d3d5da;
+$ruleFontSize: large;
+$FontFamily: 'stylish', sans-serif;
+$playerColor: #e2e0d5;
+
+$boxBackgroundColor:#b69b7d;
+$boxBorderColor:#222c3c;
+$bodyColor:#999ea7;
+$boxColors:(
+    box: black
+);
+@each $name, $color in $boxColors{
+.#{$name}{
+    color: $color;
+}
+}
